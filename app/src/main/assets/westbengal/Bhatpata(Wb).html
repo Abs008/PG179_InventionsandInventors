@@ -1,0 +1,198 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:cambria;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #3C7EDF;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+
+  grid-template-areas:
+    'header header header header header header'
+    'left left middle middle right right'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+
+   /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+
+article {
+  float: center;
+  padding: 40px;
+  width: 100%;
+  background-color:#FFE4B5;
+/* only for demonstration, should be removed */
+
+  /* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: left;
+  padding:0;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .grid-container  {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+<i>
+<div class="grid-container">
+  <div class="header">
+    <h2>Bhatpara<br>(West bengal)</h2>
+    <p style="color:white; font-size:18px">Bhatpara is a city and a municipality of North 24 Parganas district in the Indian state of West Bengal. It is a part of the area covered by Kolkata Metropolitan Development Authority (KMDA).
+Bhatpara is situated on the bank of Hooghly river. It is known for its rich traditions in the field of Sanskrit learning. The name 'Bhatpara' originates from the ancient name "Bhatta-Palli", where 'Bhatta' denotes the sect of Bramhin Sanskrit pandits and 'palli' denotes locality or village. It is one of the oldest municipalities in West Bengal and it was constituted a municipality in 1899, when it was separated from the Naihati municipality. In the British era and afterwards, it had become an important industrial hub on Hoogly river bank, mainly for the high density of jute processing plants.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Mulajore_kalibari.jpg" alt="Bhatpara Ghat" style="width:300px;height:200px;">
+  </div>
+
+  <div class="left" style="background-color:	#98FB98"><br><h2 style="font-size:40px;">Location</h2>
+  <p style="font-size:18px;">Bhatpara is located at 22.87°N 88.41°E. It has an average elevation of 12 metres (39 feet). The main town is sandwiched between the Hoogly river in the west and railway track linking Sealdah and Krishnanagar in the east.
+Bhatpara is bounded by Naihati and Dogachhia on the north, Panpur, Rambati, Mukundapur, Abhirampur, Keutia, Bidydharpur, Rahuta, Basudevpur and Gurdaha on the east, Kaugachhi, Garshyamnagar and Garulia on the south and the Hooghly on the west. Although not specifically spelled out, it is evident that localities such as Jagatdal, Kankinara, Shyamnagar, Authpur, Milangar and Sahebbagan are neighbourhoods in Bhatpara.
+</p></div>
+  <div class="middle" style="background-color:	#E6E6FA;"><br><h2 style="font-size:40px;">Transportation</h2><p><hr>
+  <p style="font-size:20px;">By Road:</p>
+State Highway 1 (locally known as Ghoshpara Road) passes through Bhatpara. Public transport includes auto rickshaws running between Naihati and Bhatpara, cycle rickshaws and bus service (routes 85, 87A etc).<br><hr>
+<p style="font-size:20px;">By Railway:</p>
+Bhatpara is served by three railway stations on the Sealdah-Ranaghat line. Shyamnagar railway station is 30.2 km from Sealdah railway station, Jagaddal railway station is 33.2 km and Kankinara railway station is 35.1 km.[39][38] The railway links are part of the Kolkata Suburban Railway system. It is approximately a one-hour train journey from Kolkata to Bhatpara.<br><hr>
+<p style="font-size:20px;">Boat Service:</p>
+It also has boat services to the other bank of Hooghly river, connecting it to Chinsura and Chandannagar.
+</p></div>
+  <div class="right" style="background-color:#B0E0E6;"><br><br><h2 style="font-size:40px;">Places of interest</h2><p><br>
+
+  <h3 style="color:red;">•Rupdas Babur Ghat:</h3><br> <p style="font-size:18px;">
+One of the oldest ghats, it belongs to the Mukherjee family. Since almost 100 years back Radhakanta Mukherjee built the ghat in 1908 and dedicated it to his father Late Rupdas Mukherjee on the bank of River Ganga. Apart from that there is a Ganga-nasi Ghar (for Antorjali Jatra), Rupeswar Shiv Mandir. The family carries on with their traditional Ratha Jatra which was started in the year of 1912.</p><br>
+
+<h3 style="color:red;">•	Bhatpara Gure Bari:</h3>
+<p style="font-size:18px;">It is one of the oldest zamindari houses of Bhatpara where an age-old Durga Puja is celebrated.</p><br>
+<h3 style="color:red;">•	Balaram Sarkar Ghat:</h3>
+<p style="font-size:18px;">It is a ghat beside Ganges.</p><br>
+<h3 style="color:red;">•	Panch Mukhi Hanuman Mandir:</h3>
+<p style="font-size:18px;">Just 200 metres from Kankinara Bazar towards the Kankinara Ghat The Panch Mukhi Hanuman mandir is there and it is one of the best temples in Bhatpara. The evening Arti of lord Hanuman is also famous.</p><br>
+<h3 style="color:red;">•	Bhatpara Kali Temple:</h3>
+<p style="font-size:18px;">It is a temple in this locality, beside the Ganga river and the ghat named Balaram Sarkar Ghat.</p><br>
+<h3 style="color:red;">•	Panchmandir:</h3>
+<p style="font-size:18px;">It is a complex of five temples constructed nearly 400 years ago. Each of the temples were funded by different well-established families of the upper class. Some portions of these temples were decorated with terracotta art.</p><br>
+<h3 style="color:red;">•	Aat goli:</h3>
+<p style="font-size:18px;">"Aat Goli"is an amalgamation of eight different back-alleys connected during municipal renovations. It is famous for being extremely narrow and having eight near-exact 90 degree turns, meandering between 2-storied buildings like a narrow stream through mountains. It connects the "Shetala Mandir" to the Barowari Math.</p><br>
+
+<h3 style="color:red;"> •	Madrail Hanuman Mandir (Madral Mahaveer Mandir):</h3>
+<p style="font-size:18px;">It is one of the best temple of Kankinara to visit. The Idol of god is in lying position, situated at 10 feet below the surface. This temple is located 2.5 km from Kankinara railway station. Along with this a Shiva temple is also situated nearby to it. Vaishnav, Kali, and Vishwakarma temples are also situated nearby to this temple. These temples are required to be renovated.</p><br>
+<h3 style="color:red;">•	Ishaque Sardar Masjid:</h3>
+<p style="font-size:18px;">The holy place of the local Muslims in Kankinara. 5 waqt namaz regularly held here. Mostly people from Kankinara market area use this masjid fod prayer. The artwork of the mosque is outstanding.good</p><br>
+<h3 style="color:red;">•	Baraipara Jama Masjid:</h3>
+<p style="font-size:18px;">Old mosque of the arya samaj area. Mostly managed by the local youths. People from the jute mill and local ghettoes use this mosque to worship the god.</p><br>
+<h3 style="color:red;">•	Kankinara Jama Masjid</h3>
+<p style="font-size:18px;">100 years old and the biggest mosque of the Kankinara area. More than a thousand people can actually pray in the mosque. It is very clean, and the architecture is historic and very much charismatic. On the occasion of Maharam or Eid, it is flooded by the people from the area.</p><br><br>
+</p></div>
+</div>
+  <article><h2 style="font-size:50px;">Bakultala Ghat:</h2><i>
+  <h4 style="font-size:40px;">HISTORY</h4>
+<p style="font-size:18px;">"We can find the name of jagaddal as a village as long as 460 years ago in written records but the place is thought to be more 100 to 150 years older or maybe even much more than that. Bipradas Pipalai (1545 AD) in his work "Manasha Mangal" tells us through his protagonist character "Chand Sadagar" about Jagatdal. Chand Saudagar mentions in his "Kabi Kankan Chandi", Jagaddal as one of the places passed by him in his voyage down the Bhagirathi (the Hooghly) and where he saw many palatial buildings built by Brahmins and Kayasthas. Haldars were the most prominent Brahmins the others being Chakrabarties and Pakrasis.. Deys were the most renowned Kayastha family while Sarkars was the same amongst Mahisyas."<br>
+<br>Pratapaditya (1561–1611 CE), The kayastha king and zamindar of Jessore made a couple of trenches and a fort at Jagatdal along with Mulajore, present day Shyamnagar as his military establishment against Muslim invaders.<br>
+<br>According to Bengal District Gazetteers: 24-Parganas, circa 1914 "In Jagatdal the lines of two moats and two large tanks are reputed to be the remains of a fort erected by Pratapaditya in the sixteenth century"
+</p>
+
+<br>
+
+<h4 style="font-size:40px;">LOCATION:</h4>
+<p style="font-size:18px;">13,Gourmohan Roy Ln,Bhatpara,jagattdal,kolkata,west bengal 743123
+jagaddal is a city in Bhatpara Municipality of North 24 Parganas district in the Indian state of West Bengal.
+<br>It is a part of the area covered by Kolkata Metropolitan Development Authority (KMDA).[1] It is also a manufacturing hub of jute industry , there are 7 big jute mills in this city. Prime Ministers Narendra Modi Visited the City During His Election Campaign.<br></p>
+
+<h4 style="font-size:40px;">Transport:</h4>
+<p style="font-size:18px;">
+Jagatdal railway station is 34 km from Sealdah Station and 4 km from Naihati Junction on the Sealdah-Naihati branch line of Eastern Railway.[9] It is part of the Kolkata Suburban Railway system.</p>
+
+<img src="https://content3.jdmagicbox.com/comp/north_24_parganas/w5/9999pxx33.xx33.180118232534.u6w5/catalogue/kalimandir-ghat-and-park-bhatpara-north-24-parganas-parks-2z5h0ktpx2.jpg?clr=3a2c2c" alt="Bhatpara Ghat" style="width:300px;height:200px;">
+
+<br>
+<h4 style="font-size:40px;" >Pollution:</h4>
+<p style="font-size:18px;">The rapidly growing population and industrial expansion in the city  has resulted in an increase in the generation of sewage, which  flows directly into the river.
+Two STPs have been constructed in Bhatpara & Halisahar under the Namami Gange Programme. STPs will restrict the direct flow of sewage into the river.<br>
+Two new sewage treatment plants (STPs) with capacities of 31 MLD and 10 MLD have been constructed in Bhatpara under the Namami Gange Programme. These STPs will restrict the direct flow of sewage into the river. Bhatpara is known for its rich traditions in the field of Sanskrit learning and for its jute processing plants is situated on the banks of the River Hooghly. A large  sewage network of 120 kilometres has been laid down in the city to curb the water pollution.
+With the construction of the new sewage treatment plants, Bhatpara now has a total capacity of 61 million litres per day to treat its sewage waste.<br><br></p>
+<h4 style="font-size:40px;">Awareness:</h4>
+<p style="font-size:18px;">
+•	Restoring ecological flow at every point along the Ganga's course.
+<hr>
+•	Development of sewage treatment technology such as Up-flow Anaerobic Sludge Blanket (UASB) and sewage treatment through afforestation.
+<hr>
+•	preventing and curtailing all waste,starting with sewage and industrial waste,from mixing with the river.</p>
+<hr>
+  <article>
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://en.m.wikipedia.org/wiki/Bhatpara#/media/File%3AWest_Bengal_location_map.svg">Google map link-Bhatpara</a></li>
+      <hr>
+      <li><a href="https://en.m.wikipedia.org/wiki/Bhatpara">Source_Bhatpara
+      </a></li>
+      <hr>
+    </ul>
+  </nav>
+  
+</body>
+</html>

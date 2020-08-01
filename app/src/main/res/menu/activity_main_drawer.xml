@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_exclusive"
+            android:icon="@drawable/ic_baseline_near_me_24"
+            android:title="@string/menu_exclusive"/>
+        <item
+            android:id="@+id/nav_objective"
+            android:icon="@drawable/ic_baseline_pie_chart_24"
+            android:title="@string/menu_objective" />
+        <item
+            android:id="@+id/nav_wholeview"
+            android:icon="@drawable/ic_baseline_location_on_24"
+            android:title="@string/menu_wholeview" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_baseline_system_update_24"
+            android:title="@string/menu_update" />
+    </group>
+    <item android:title="Networks">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="@string/menu_rate" />
+            <item
+                android:id="@+id/nav_moreapp"
+                android:icon="@drawable/ic_baseline_more_24"
+                android:title="@string/menu_moreapp" />
+
+        </menu>
+    </item>
+</menu>

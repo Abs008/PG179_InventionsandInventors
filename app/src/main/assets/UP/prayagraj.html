@@ -1,0 +1,223 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:cambria;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #3C7EDF;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+
+  grid-template-areas:
+    'header header header header header header'
+    'left left middle middle right right'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+
+   /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+
+article {
+  float: center;
+  padding: 25px;
+  width: 100%;
+  background-color:		#F5F5F5;
+/* only for demonstration, should be removed */
+
+  /* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: left;
+  padding:0;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .grid-container  {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+<i>
+<div class="grid-container">
+  <div class="header">
+    <h2 style="color:black; font-size:60px">Allahabad</h2>
+    <p style="color:white; font-size:18px">Allahabad officially known as Prayagraj, and also known as Illahabad and Prayag, is a city in the Indian state of Uttar Pradesh. It is the administrative headquarters of Allahabad district—the most populous district in the state and 13th most populous district in India—and the Allahabad division. The city is the judicial capital of Uttar Pradesh with Allahabad High Court being the highest judicial body in the state. As of 2011, Allahabad is the seventh most populous city in the state, thirteenth in Northern India and thirty-sixth in India, with an estimated population of 1.11 million in the city and 1.21 million in its metropolitan region.[9][10] In 2011 it was ranked the world's 40th fastest-growing city.[11][12] Allahabad, in 2016, was also ranked the third most liveable city in the state (after Noida and Lucknow) and sixteenth in the country.[13] Hindi is the most widely spoken language in the city.
+<br>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Triveni_Sangam.JPG/375px-Triveni_Sangam.JPG" alt="Bhatpara Ghat" style="width:390px;height:200px;">
+<br>
+<br>
+    Allahabad lies close to Triveni Sangam, the "three-river confluence" of the Ganges, Yamuna and Sarasvati rivers. It plays a central role in Hindu scriptures. The city finds its earliest reference as one of the world's oldest known cities in Hindu mythological texts and has been venerated as the holy city of Prayaga in the ancient Vedas. Allahabad was also known as Kosambi in the late Vedic period, named by the Kuru rulers of Hastinapur, who developed it as their capital. Kosambi was one of the greatest cities in India from the late Vedic period until the end of Maurya Empire with occupation continuing until the Gupta Empire. Since then, the city has been a political, cultural and administrative centre of the Doab region. In the early 17th century, Allahabad was a provincial capital in the Mughal Empire under the reign of Jahangir.</p>
+
+  </div>
+
+  <div class="left" style="background-color:		#FFE4E1"><br><h2 style="font-size:40px;">Etymology</h2>
+  <p style="font-size:18px;">The location at the confluence of Ganges and Yamuna rivers has been known in ancient times as Prayāga, which means "place of a sacrifice" in Sanskrit It was believed that god Brahma performed the very first sacrifice (yāga, yajna) in this place.
+
+The word prayāga has been traditionally used to mean "a confluence of rivers". For Allahabad, it denoted the physical meeting point of the rivers Ganges and Yamuna in the city. An ancient tradition has it that a third river, invisible Sarasvati, also meets there with the two. Today, Triveni Sangam is a more frequently used name for the confluence.
+<br>
+<br>
+Prayagraj (Sanskrit: Prayāgarāja), meaning "the king among the five prayāgas", is used as a term of respect to indicate that this confluence is the most splendid one of the five sacred confluencies in India.
+
+It is said that the Mughal emperor Akbar visited the region in 1575 and was so impressed by the strategic location of the site that he ordered a fort be constructed. The fort was constructed by 1584 and called Ilahabas or "Abode of God", later changed to Allahabad under Shah Jahan. Speculations regarding its name however, exist. Because of the surrounding people calling it Alhabas, has led to some people[who?] holding the view that it was named after Alha from Alha's story. James Forbes' account of the early 1800s claims that it was renamed Allahabad or "Abode of God" by Jahangir after he failed to destroy the Akshayavat tree. The name, however, predates him, with Ilahabas and Ilahabad mentioned on coins minted in the city since Akbar's rule, the latter name became predominant after the emperor's death. It has also been thought to not have been named after Allah but ilaha (the gods). Shaligram Shrivastav claimed in Prayag Pradip that the name was deliberately given by Akbar to be construed as both Hindu ("ilaha") and Muslim ("Allah").
+<br>
+<br>
+Over the years, a number of attempts were made by the BJP-led governments of Uttar Pradesh to rename Allahabad to Prayagraj. In 1992, the planned rename was shelved when the chief minister, Kalyan Singh, was forced to resign following the Babri Masjid demolition. 2001 saw another attempt led by the government of Rajnath Singh which remained unfulfilled.[30] The rename finally succeeded in October 2018 when the Yogi Adityanath-led government officially changed the name of the city to Prayagraj.
+</p>
+<br>
+<br></div>
+  <div class="middle" style="background-color:	#E6E6FA;"><br><h2 style="font-size:40px;">History</h2><p>
+  <p>Allahabad is one of the largest cities of the North Indian state of Uttar Pradesh in India. Although initially named Ilahabas the name later became Allahabad in an anglicized version in Roman script.[1] In 2018 the name of the city was changed to Prayagraj by the State government ruled by Yogi Adhityanath . The city is situated on an inland peninsula, surrounded by the rivers Ganges and Yamuna on three sides, with only one side connected to the mainland Doab region, of which it is a part. This position is of importance in Hindu scriptures for it is situated at the confluence, known as Triveni Sangam, of the holy rivers. As per Rigveda the Sarasvati River (now dried up) was part of the three river confluence in ancient times. It is one of four sites of the Kumbh Mela, an important mass Hindu pilgrimage.
+ <br>
+  <br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kumbh_Mela2001.JPG/330px-Kumbh_Mela2001.JPG" alt="All" style="width:390px;height:200px;">
+  <br>
+  <br>
+</p>
+
+<form action="https://en.wikipedia.org/wiki/History_of_Allahabad">
+    <input type="submit" value="Learn More" />
+</form>
+
+</div>
+  <div class="right" style="background-color:#FFFAF0;"><br><br><h2 style= "font-size:40px;">Triveni Sangam</h2><p><br>
+  In Hindu tradition Triveni Sangam is the "confluence" (Sangam in Sanskrit) of three rivers (Ganga, Yamuna & Saraswati). The point of confluence is a sacred place for Hindus, with a bath here said to flush away all of one's sins and free one from the cycle of rebirth[
+<br>
+<br>
+  <h3 style="color:red; font-size:25px;">Triveni Sangam in Prayagraj (Allahabad)</h3> <p style="font-size:18px;">
+One such Triveni Sangam, in Prayagraj (Allahabad), has the confluence of three rivers — the Ganges , the Yamuna and a third mythical river the Saraswati. The two rivers maintain their visible identity and can be identified by their different colours. The water of the Ganges is clear, while that of the Yamuna is greenish in colour.
+<br>
+A place of religious importance and the site for historic Kumbh Mela held every 12 years, over the years it has also been the site of immersion of ashes of several national leaders, including Mahatma Gandhi in 1948.
+<br>
+The auspiciousness of the confluence of two rivers is referred to in the Rigveda, which says,"Those who bathe at the place where the two rivers flow together, rise up to heaven"</p><br>
+
+  <br>
+  <img src="https://www.adotrip.com/public/images/areas/5c8a30341a9cd-Triveni%20Sangam%20Travel.jpg" alt="All4" style="width:390px;height:200px;">
+  <br>
+  <br>
+  |Sangam|
+ <br> 
+  <br>
+  <p><a href="https://www.google.com/maps/place/Triveni+Sangam/@25.4220346,81.8637656,14z/data=!3m1!4b1!4m5!3m4!1s0x39854ab849bc4d53:0xd646a67bac4072fc!8m2!3d25.4220361!4d81.8812752">GOOGLE MAP LINK</a></p>
+  <hr>
+
+<h3 style="color:red; font-size:25px;">Saraswati Ghat</h3>
+<p style="font-size:18px;">Saraswati Ghat is probably the most spectacular ghat in Allahabad on the bank of Yamuna river in the Indian state of Uttar Pradesh. It is located close to Mankameshwar Temple of lord Shiva. The name of ghat comes from Hindu Goddess of learning Saraswati. It is a newly built place. Stairs from three sides descend to the greenish water of the Yamuna. Above there is a park which is covered with green grass.
+<br>
+Around the corner of Akbar's Fort near Triveni Sangam, this ghat hosts a nightly aarti with lighting of lamps. There are facilities of food court also routes to reach Sangam by boat from here.
+</p><br>
+
+<h3 style="color:black;">Location</h3>
+<p style="font-size:18px;">Parade Ground Road, Near, New Yamuna Bridge, Prayagraj, Uttar Pradesh 211003<br>
+Nearest Airport- Prayagraj Airport (12 Km).<br>
+Nearest Railway Station- Prayagraj Junction, (5.8 Km).<br>
+</p><br>
+
+  <br>
+  <img src="https://lh3.googleusercontent.com/proxy/OePhDvsgrbcqcALGUgV8jNrF4eQOMbaBO05M_X55HHGdMnsMlVWMhIgYPtDt9FMOybE9S-_xw6YnF45eVYznKqDDbxtTrQ9WRLrtfFmq0Q" alt="All2" style="width:390px;height:200px;">
+  <br>
+  <br>
+  <hr>
+  Saraswati Ghat
+  <br>
+  <br>
+  <img src="https://www.tripnight.com/public/thumbs/monuments/4102/FKYLT8ERBdDa_468_738.jpg" alt="All3" style="width:390px;height:200px;">
+  <br>
+  <br>
+<hr>
+
+
+<h1 style="font-size:30px;">Some Other Nearby Ghat</h1>
+<p>
+•VIP Ghat
+<br>
+•Ram Ghat
+<br>
+•Laltarao Ghat
+<br>
+•Param Nagara Ghat
+
+</p>
+<h4 style="font-size:40px;" >Pollution:</h4>
+<p style="font-size:18px;">Prayagraj (Allahabad): Every day, the specially-trained personnel of 137 Composite Eco-Task Force (CETF) battalion of the Territorial Army carry out a drill at the Triveni Sangam in Prayagraj (Allahabad) to educate and create awareness among the masses on keeping the river clean. Called ‘Ganga Task Force’, they organise gatherings at the ghats and on the banks of River Ganga to spread public awareness. They not only interact with the visitors but also with priests, vendors and barbers to seek their contribution to fulfilling the task of cleaning and rejuvenating the holiest river.
+</p>
+
+<h4 style="font-size:40px;">Awareness:</h4>
+<p style="font-size:18px;">
+Rainfall, subsurface flows and snow melt from glaciers are the main sources of water in river Ganga. Surface water resources of Ganga have been assessed at 525 billion cubic meter (BCM). Out of its 17 main tributaries Yamuna, Sone, Ghagra and Kosi contribute over half of the annual water yield of the Ganga. These tributaries meet the Ganga at Allahabad and further downstream. The river has a problem of low flows between the Haridwar - Allahabad stretch. December to May are the months of lean flow in the Ganga.</p>
+
+
+<h4 style="font-size:40px;">Transportation:</h4>
+  <p style="font-size:20px;">By Road:</p>
+<br>Buses operated by Uttar Pradesh State Road Transport Corporation and Allahabad City Transport Service are an important means of public transport for travelling to various parts of the city, state and outskirts. Auto Rickshaws have been a popular mode of transportation.Cycle rickshaws are the most economical means of transportation in Allahabad along with e-rickshaws<hr>
+<p style="font-size:20px;">By Railway:</p>
+The city is connected to most other Uttar Pradesh cities and major Indian cities such as Kolkata, New Delhi, Hyderabad, Patna, Mumbai, Visakhapatnam, Chennai, Bangalore, Guwahati, Thiruvananthapuram, Pune, Bhopal, Kanpur, Lucknow and Jaipur.<br><hr>
+<p style="font-size:20px;">Air Service:</p>
+Allahabad is served by Allahabad Airport (IATA: IXD, ICAO: VIAL), which began operations in February 1966. The airport is 12 kilometres (7.5 mi) from the city centre and lies in Bamrauli, Allahabad. As of now, Allahabad is connected to six cities by flight, where Air India's regional arm Alliance Air connects Allahabad to Delhi and Indigo connects it to Bangalore. The nearest international airports are in Varanasi and Lucknow.
+<br>
+The world's first airmail flight took place from Allahabad to Naini in February 1911, when 6,000 cards and letters where flown by French pilot Henri Pequet.<br>
+<hr>
+  
+</body>
+</html>

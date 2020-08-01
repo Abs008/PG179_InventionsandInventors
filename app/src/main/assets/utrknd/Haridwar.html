@@ -1,0 +1,337 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:cambria;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #3C7EDF;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+
+  grid-template-areas:
+    'header header header header header header'
+    'left left middle middle right right'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+
+   /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+
+article {
+  float: center;
+  padding: 25px;
+  width: 100%;
+  background-color:		#F5F5F5;
+/* only for demonstration, should be removed */
+
+  /* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: left;
+  padding:0;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .grid-container  {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+<i>
+<div class="grid-container">
+  <div class="header">
+    <h2 style="color:black; font-size:60px">Haridwar</h2>
+    <p style="color:white; font-size:18px">Haridwar also spelled Hardwar, is a city and municipal Corporation in the Haridwar district of Uttarakhand, India. With a population of 228,832 in 2011, it is the second largest city in the state and the largest in the district.
+<br>
+<br>
+The city is situated on the right bank of the Ganga river, at the foothills of the Shivalik ranges. Haridwar is regarded as a holy place for Hindus, hosting important religious events and serving as a gateway to several prominent places of worship. Most significant of the events is the Kumbha Mela, which is celebrated every 12 years in Haridwar. During the Haridwar Kumbh Mela, millions of pilgrims, devotees, and tourists congregate in Haridwar to perform ritualistic bathing on the banks of the river Ganges to wash away their sins to attain Moksha.
+<br>
+<br>
+According to the Samudra manthan,Haridwar along with Ujjain, Nashik and Prayagraj (Allahabad) is one of four sites where drops of Amrit, the elixir of immortality, accidentally spilled over from the pitcher while being carried by the celestial bird Garuda. Brahma Kund, the spot where the Amrit fell, is located at Har ki Pauri (literally, "footsteps of the Lord") and is considered to be the most sacred ghat of Haridwar. It is also the primary centre of the Kanwar pilgrimage, in which millions of participants gather sacred water from the Ganga and carry it across hundreds of miles to dispense as offerings in Śiva shrines. Today, the city is developing beyond its religious importance, with the fast developing industrial estate of State Industrial Development Corporation of Uttarakhand (SIDCUL), and the close by township of Bharat Heavy Electricals Limited as well as its affiliated ancillaries.
+<br>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Har_ki_pauri_panoramic_view1.jpg/1500px-Har_ki_pauri_panoramic_view1.jpg" alt="Bhatpara Ghat" style="width:390px;height:200px;">
+<br>
+<br>
+Haridwar presents a kaleidoscope of Indian culture and development. In the sacred writings, it has been differently specified as Kapilsthan, Gangadwar, and Mayapuri. It is additionally a passage for the Chota Char Dham (the four principal pilgrim destinations in Uttarakhand viz, Badrinath, Kedarnath, Gangotri, and Yamunotri), subsequently, Shaivaites (adherents of Lord Shiva) and Vaishnavites (devotees of Lord Vishnu) call this place Hardwar and Haridwar individually, relating to Har being Shiv and Hari being Vishnu..</p>
+
+  </div>
+
+  <div class="left" style="background-color:		#FFE4E1"><br><h2 style="font-size:40px;">Etymology</h2>
+  <p style="font-size:18px;">The modern name of the town has two spellings: Haridwar and Hardwar. Each of these names has its own connotation.
+
+In Sanskrit, the liturgical language of Hinduism, Hari means "Lord Vishnu", while dwar means "gateway". So, Haridwar translates to "The Gateway to Lord Vishnu". It earns this name because it is typically the place where pilgrim's start their journey to visit a prominent temple of Lord Vishnu - Badrinath.
+<br>
+<br>
+Similarly, Hara could also mean "Lord Shiva". Hence, Hardwar could stand for "Gateway to Lord Shiva". Hardwar is also a typical place to start a pilgrim's journey in order to reach Mount Kailash, Kedarnath, the northernmost Jyotirlinga and one of the sites of the smaller Char Dham pilgrimage circuit - all important places for worship for Hindus.
+<br>
+<br>
+According to legend, it was in Haridwar that Goddess Ganga descended when Lord Shiva released the mighty river from the locks of his hair. The River Ganga, after flowing for 253 kilometres (157 mi) from its source at Gaumukh at the edge of the Gangotri Glacier, enters the Gangetic Plain for the first time at Haridwar, which gave the city its ancient name, Gangadwára.
+</p>
+<br>
+<br></div>
+  <div class="middle" style="background-color:	#E6E6FA;"><br><h2 style="font-size:40px;">History</h2><p>
+  <p>In the scriptures, Haridwar has been variously mentioned as Kapilasthana, Gangadwara and Mayapuri. It is also an entry point to the Char Dham (the four main centres of pilgrimage in Uttarakhand viz, Badrinath, Kedarnath, Gangotri, and Yamunotri), hence, Shaivaites (followers of Lord Shiva) and Vaishnavites (followers of Lord Vishnu) call this place Hardwar and Haridwar respectively, corresponding to Hara being Shiv and Hari being Vishnu
+  <br>
+  <br>
+  In the Vanaparva of the Mahabharat, where sage Dhaumya tells Yudhishthira about the tirthas of India, Gangadwar, i.e., Haridwar and Kankhal, have been referred to, the text also mentions that Agastya Rishi did penance here, with the help of his wife, Lopamudra (the princess of Vidharba).
+   <br>
+  <br>
+Sage Kapila is said to have an ashram here giving it, its ancient name, Kapila or Kapilasthana.
+
+The legendary King, Bhagiratha, the great-grandson of the Suryavanshi King Sagar (an ancestor of Rama),is said to have brought the river Ganges down from heaven, through years of penance in Satya Yuga, for the salvation of 60,000 of his ancestors from the curse of the saint Kapila, a tradition continued by thousands of devout Hindus, who bring the ashes of their departed family members, in hope of their salvation.Lord Vishnu is said to have left his footprint on the stone that is set in the upper wall of Har Ki Pauri, where the Holy Ganges touches it at all times.
+ <br>
+  <br>
+  <img src="https://im.hunt.in/cg/Haridwar/City-Guide/har-ki-pauri-history.jpg" alt="Bhatpara Ghat" style="width:390px;height:200px;">
+  <br>
+  <br>
+Haridwar came under the rule of the Maurya Empire (322–185 BCE), and later under the Kushan Empire (c. 1st–3rd centuries). Archaeological findings have proved that terra cotta culture dating between 1700 BCE and 1200 BCE existed in this region.First modern era written evidence of Haridwar is found in the accounts of a Chinese traveller, Huan Tsang, who visited India in 629 AD. during the reign of King Harshavardhan (590–647) records Haridwar as 'Mo-yu-lo', the remains of which still exist at Mayapur, a little to the south of the modern town. Among the ruins are a fort and three temples, decorated with broken stone sculptures, he also mentions the presence of a temple, north of Mo-yu-lo called 'Gangadwara', Gateway of the Ganges.</p>
+
+<form action="https://www.britannica.com/place/Haridwar">
+    <input type="submit" value="Learn More" />
+</form>
+
+</div>
+  <div class="right" style="background-color:#B0E0E6;"><br><br><h2 style= "font-size:40px;">Places of interest</h2><p><br>
+
+  <h3 style="color:red;">•Har Ki Pauri:</h3><br> <p style="font-size:18px;">
+This sacred Ghat was constructed by King Vikramaditya (1st century BC) in memory of his brother Bharthari. It is believed that Bharthari came to Haridwar and meditated on the banks of the holy Ganges. When he died, his brother constructed a Ghat in his name, which later came to be known as Har Ki Pauri. The most sacred ghat within Har Ki Pauri is Brahmakund. The evening prayer (Aarti) at dusk offered to Goddess Ganga at Har Ki Pauri (steps of God Hara or Shiva) is an enchanting experience for any visitor. A spectacle of sound and colour is seen when, after the ceremony, pilgrims float Diyas (floral floats with lamps) and incense on the river, commemorating their deceased ancestors. Thousands of people from all around the world do make a point to attend this prayer on their visit to Haridwar. A majority of present ghats were largely developed in the 1800s. On the night of Dussehra or a few days before that, the Ganga Canal is dried in Haridwar to clean the riverbed. The water is restored on Dewali. It is believed that on Dussera Maa Ganga goes to her father's house and returns after Bhai Duj or Bhai Phota. It is for this reason that the waters in the Ganga canal in Haridwar are partially dried on the night of Dussehra and the waters are restored on the day of Bhai Duj or Bhai Phota.</p><br>
+
+<p><a href="https://en.wikipedia.org/wiki/Har_Ki_Pauri">Hari Ki Puri</a></p>
+<br>
+<br>
+<h3 style="color:red;">•Chandi Devi Temple</h3>
+<p style="font-size:18px;">The temple is dedicated to Goddess Chandi, who sits atop the 'Neel Parvat' on the eastern bank of the river Ganges. It was constructed in 1929 A.D. by the king of Kashmir, Suchat Singh. Skanda Purana mentions a legend, in which Chanda-Munda, the Army Chief of a local Demon Kings Shumbha and Nishumbha were killed by goddess Chandi here, after which the place got the name, Chandi Devi. It is believed that the main statue was established by the Adi Shankaracharya in the 8th century A.D. The temple is a 3 km trek from Chandighat and can also be reached through a ropeway.</p><br>
+<p><a href="https://en.wikipedia.org/wiki/Chandi_Devi_Temple,_Haridwar">Chandi Devi Temple, Haridwar</a></p>
+<br>
+<br>
+<h3 style="color:red;">•Mansa Devi Temple</h3>
+<p style="font-size:18px;">Situated at the top of Bilwa Parwat, the temple of Goddess Mansa Devi, literally meaning the Goddess who fulfils desires (Mansa), is a popular tourist destination, especially because of the cable cars, which offer views of the city. The main temple houses two idols of the Goddess, one with three mouths and five arms, while the other one has eight arms.</p><br>
+<p><a href="https://en.wikipedia.org/wiki/Mansa_Devi_Temple,_Haridwar"> Mansa Devi Temple, Haridwar</a></p>
+<br>
+<br>
+
+<h3 style="color:red;">•Maya Devi Temple</h3>
+<p style="font-size:18px;">Haridwar was previously known as Mayapuri which is because of the Goddess Maya Devi. Dating to the 11th century, this ancient temple of Maya Devi, the Adhishthatri Devi (Patron Goddess) of Haridwar, is considered one of the Siddhapithas and is said to be the place where the heart and navel of Goddess Sati had fallen. It is one of few ancient temples still standing in Haridwar, along with Narayani Shila temple and Bhairav Temple..</p><br>
+<p><a href="https://en.wikipedia.org/wiki/Maya_Devi_Temple,_Haridwar"> Maya Devi Temple, Haridwar</a></p>
+<br>
+<br>
+
+<h3 style="color:red;">•Kankhal</h3>
+<p style="font-size:18px;">The ancient temple of Daksha Mahadev also known as Daksheshwar Mahadev Temple has situated in the south Kankhal town. According to Hindu texts, King Daksha Prajapati, father of Dakshayani, Lord Shiva's first wife, performed a yagña, to which he deliberately did not invite Lord Shiva. When she arrived uninvited, he was further insulted by the king, seeing which Sati felt infuriated and self-immolated herself in the yagna kund. King Daksha was later killed by the demon Virabhadra, born out of Shiva's anger. Later the king was brought to life and given a goat's head by Shiva. Daksha Mahadev temple is a tribute to this legend.
+
+Sati Kund, another well-known mythological heritage worth a visit is situated in the Kankhal. Legend has it that Sati immolated herself in this kund.</p><br>
+<p><a href="https://en.wikipedia.org/wiki/Daksheswar_Mahadev_Temple"> Daksheswara Mahadev Temple</a></p>
+<br>
+<br>
+
+
+</div>
+</div>
+  <article><h2 style=" color:mediumblue; font-size:50px;">Har Ki Pauri Ghat:</h2><i>
+  <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">Har Ki Pauri is a major landmark place and a famous ghat on the banks of river Ganga in Haridwar. A center place of attraction among devotees in Haridwar, Har ki Pauri is believed to be the place of exit of holy river Ganga from the mountains.
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Har Ki Pauri is a major landmark place and a famous ghat on the banks of river Ganga in Haridwar</p>
+
+<h4 style="font-size:30px;">Ganga Arti Timings </h4>
+<p style="font-size:18px;">
+Morning:- 5:30-6:30AM<br>
+Evening:- 6:00-7:00PM<br>
+
+Famous for: Holy Bathing Ghat 
+.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg/450px-Evening_view_of_Har-ki-Pauri%2C_Haridwar.jpg" alt="Hari ki Puri" style="width:300px;height:200px;">
+
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Har+Ki+Pauri,+Haridwar,+Uttarakhand+249401/@29.9576812,78.1653293,15z/data=!3m1!4b1!4m5!3m4!1s0x39094719f19d3541:0x87438cf732fdb6e3!8m2!3d29.9573607!4d78.1749687">GOOGLE MAP LINK~Hari ki Puri</a></p>
+<hr>
+
+<h2 style=" color:mediumblue;font-size:50px;">Gau Ghat: </h2><i>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">Mythologically, a cow fulfills the wishes and the desires and is known as "Kamadhenu". People reach this place for penance for their sin of cow killing for food.
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Gau ghat is located in haridwar,Garhwal (near Har Ki pauri ghat).</p>
+<br>
+<br>
+<br>
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/09/f4/b3/17/gau-ghat.jpg" alt="Gau ghat" style="width:300x;height:300px;">
+<br>
+
+<hr>
+<p><a href="https://www.google.com/maps/place/Gau+Ghat,+Haridwar,+Uttarakhand+249401/@29.9540351,78.1670702,17z/data=!3m1!4b1!4m5!3m4!1s0x3909471b3fe4142d:0xff48cc101a984cb5!8m2!3d29.9540357!4d78.1692244">GOOGLE MAP LINK~Gau ghat</a></p>
+<hr>
+
+<h2 style="color:mediumblue; font-size:50px;">Ashthi Parvat Ghat: </h2><i>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">‘Asthi Pravah’ means to immerse the ashes of a dead body in water. In accordance with the Hinduism our body is formed with five elements named Prithawi (soil), Akash (sky), Vayu (air) and Agni (fire) and after the death this body is dissevered into these four elements. Therefore a dead body is incinerated and it separates into fire, sky and soil. The remaining part (ashes) is immersed in water. People come to this ghat to immerse the ashes and complete the process of cremation of a dead body. Asthi Prawah Ghat is located near the Ganga temple to the south direction.
+</p>
+
+<h4 style=" font-size:30px;">Location</h4>
+<p style="font-size:18px;">Located near har ki pauri ghat ,haridwar.</p>
+<br>
+<br>
+
+<img src="https://www.allinharidwar.com/library/timthumb.php?src=/wp-content/uploads/2016/01/Asthi-Pravah-Ghat-Haridwar.jpg&h=380&zc=0&q=80" alt="Asp" style="width:200x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Asthi+Parvah+Ghat,+Haridwar/@29.9558946,78.1686925,17z/data=!3m1!4b1!4m5!3m4!1s0x3909471a542c8ce5:0x7dedc793e7bb4a98!8m2!3d29.9558946!4d78.1708812?hl=en">GOOGLE MAP LINK~Asthi Parvat ghat</a></p>
+<hr>
+<h2 style="color:mediumblue; font-size:50px;">Shubhas Ghat:</h2><i>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">Subhas ghat is positioned close to the Har Ki Pauri Ghat. It is named after Subhas Chandra Bose who was a freedom fighter. There is a dispensary near this ghat & you will also see the statue of Subhas Chandra bose at this ghat. The view of Ganga from this ghat is magnificent,  which you will never forget, when you will be visited once at this sight.
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Located near har ki pauri ghat ,haridwar.</p>
+<br>
+<br>
+
+<img src="https://www.allinharidwar.com/wp-content/uploads/2016/02/Subhash-Ghat-Haridwar-Uttarakhand.jpg" alt="Sub" style="width:200x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Subhash+Ghat,+Haridwar,+Uttarakhand+249401/@29.9549159,78.1677622,17z/data=!3m1!4b1!4m5!3m4!1s0x3909471b1ad3c803:0xfc4a71e3708a1869!8m2!3d29.954853!4d78.1698923?hl=en">GOOGLE MAP LINK~Subhas Ghat</a></p>
+<hr>
+
+<h2 style=" color:mediumblue; font-size:50px;">Vishnu Ghat:</h2><i>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">Vishnu Ghat is one of the important Ghats along the Ganga River in Haridwar. Named after Lord Vishnu, it is believed to be the same place where Lord Vishnu bathed. Legend states that a dip in the holy water of this ghat washes away all the sins. Owing to the immense faith in Lord Vishnu by the people of Haridwar, devotees visit this land to take a dip in the ghat.
+ishnu ghat is not much crowded like the Har Ki Puari ghat so one can take a dip with complete peace. The flow of the river is fast and it is narrow. The actual river flows east of the Vishnu ghat but the river has been diverted by the government so that it is safer for people to bathe during religious events. There are steps on both the banks leading to the river where you can take a dip. There is an iron barrier which makes sure that people do not get swept away by the flow of river. There are many temples, hotels & restaurants, near by the ghat.
+
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Located near har ki pauri ghat ,haridwar.</p>
+<br>
+<br>
+
+<img src="https://lh5.googleusercontent.com/p/AF1QipMhs3FmaJr3nAaUzgokRUYoJ38cutfg113ZFnMg=w408-h544-k-no" alt="Vishnu Ghat" style="width:500x;height:450px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Vishnu+Ghat,+Haridwar,+Uttarakhand+249401/@29.9513381,78.1632843,17z/data=!3m1!4b1!4m5!3m4!1s0x3909470371197361:0x6a284f8f00e8e89!8m2!3d29.9513413!4d78.1655282?hl=en">GOOGLE MAP LINK~Vishnu Ghat</a></p>
+<hr>
+
+<h2 style="color:mediumblue; font-size:50px;">Kushavatra Ghat:</h2><i>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">Out of all the ghats situated in haridwar on the banks of ganga river,Kushavarta ghat is considered one of the most sacred of all. All ritr and rituals including the shraddha rites  for the departed souls are performed at this ghat where thousands of devotees and pilgrims take holy dip in ganges and pray for their ancestors every day. Kushvarta ghat is constructed by the valiant Maratha queen Ahilya Holkar during the early 18th century.
+Accordingto hindu mythology, this ghat was visited by great saga Dattatreya who used to spend time at this ghat often and even meditate at this place. It is believed it is at this ghat dattatreya performed penance and stood up on one leg for thousands of years to please the Almighty.
+
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Located near har ki pauri ghat ,haridwar.</p>
+<br>
+<br>
+
+<img src="https://www.trawell.in/admin/images/upload/137201316Haridwar_Kusha_Ghat_Main.jpg" alt="Kushavatra Ghat" style="width:400x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/search/Kushavatra+Ghat/@29.9549069,78.1674453,17z/data=!3m1!4b1?hl=en">GOOGLE MAP LINK~Kushavatra Ghat</a></p>
+<hr>
+
+<h1 style="font-size:30px;">Some Other Nearby Ghat</h1>
+<p>
+•VIP Ghat
+<br>
+•Ram Ghat
+<br>
+•Laltarao Ghat
+<br>
+•Param Nagara Ghat
+
+</p>
+<h4 style="font-size:40px;" >Pollution:</h4>
+<p style="font-size:18px;">A dip in the Ganga may wash away your sins but the river’s water is also likely to make you sick. The Central Pollution Control Board’s (CPCB) reply to an RTI query put up by TOI has said that the water of the river along Haridwar is not even fit for bathing.
+CPCB has said that water in Haridwar district fails almost all parameters of safety. According to official sources, nearly 50,000-1 lakh devotees take baths in over 20 ghats of Haridwar every day.
+Tests were done at 11 locations in Uttarakhand, from Gangotri to Haridwar district, a distance of 294 km along the river. The RTI filed sought details of water quality and locations from which samples are collected for hydrological studies.
+</p>
+
+<h4 style="font-size:40px;">Awareness:</h4>
+<p style="font-size:18px;">
+Under the Namami Gange project, besides cleaning the ghats, Uttarakhand will also set up medicinal herbs and plants along the river banks.
+After coming to power, the National Democratic Alliance (NDA) government made cleaning of the Ganga one of its top priorities. It renamed the Ministry of Water Resources as the ‘Ministry of Water Resources, River Development and Ganga Rejuvenation’ and launched the ‘Namami Gange Programme’ “to accomplish... effective abatement of pollution, conservation and rejuvenation of National River Ganga” with an outlay of Rs 20,000 crore in its first Budget.</p>
+
+
+<h4 style="font-size:40px;">Transportation:</h4>
+  <p style="font-size:20px;">By Road:</p>
+One can easily reach har ki pauri by autorikshaw or bicycle.<br><hr>
+<p style="font-size:20px;">By Railway:</p>
+Station:Haridwar Railway Station(3KM)<br><hr>
+<p style="font-size:20px;">Air Service:</p>
+Jolly grant Airport (37KM)<br>
+<hr>
+  
+</body>
+</html>

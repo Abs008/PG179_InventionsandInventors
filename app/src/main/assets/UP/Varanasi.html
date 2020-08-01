@@ -1,0 +1,412 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:cambria;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: 	#FFDEAD;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+
+  grid-template-areas:
+    'header header header header header header'
+    'left left middle middle right right'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+
+   /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+
+article {
+  float: center;
+  padding: 25px;
+  width: 100%;
+  background-color:		#F5F5F5;
+/* only for demonstration, should be removed */
+
+  /* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: left;
+  padding:0;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .grid-container  {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+<i>
+<div class="grid-container">
+  <div class="header">
+    <h2 style="color:#DC143C; font-size:60px">Varanasi</h2>
+    <p style="color:black; font-size:18px"><a href="https://en.wikipedia.org/wiki/Varanasi">Varanasi</a>, also known as Benares or Kashi is a city on the banks of the river Ganges in Uttar Pradesh, India, 320 kilometres (200 mi) south-east of the state capital, Lucknow, and 121 kilometres (75 mi) east of Allahabad. A major religious hub in India, it is the holiest of the seven sacred cities (Sapta Puri) in Hinduism and Jainism, and played an important role in the development of Buddhism and Ravidassia.
+<br>
+<br>
+Varanasi grew as an important industrial centre famous for its muslin and silk fabrics, perfumes, ivory works, and sculpture. Buddha is believed to have founded Buddhism here around 528 BCE when he gave his first sermon, "The Setting in Motion of the Wheel of Dharma", at nearby Sarnath. The city's religious importance continued to grow in the 8th century, when Adi Shankara established the worship of Shiva as an official sect of Varanasi. During the Muslim rule through the Middle Ages, the city continued as an important centre of Hindu devotion, pilgrimage, mysticism and poetry which further contributed to its reputation as a centre of cultural importance and religious education. Tulsidas wrote his epic poem on Rama's life called Ram Charit Manas in Varanasi. Several other major figures of the Bhakti movement were born in Varanasi, including Kabir and Ravidas.Guru Nanak visited Varanasi for Maha Shivaratri in 1507, a trip that played a large role in the founding of Sikhism.
+<br>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/375px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg" alt="Bhatpara Ghat" style="width:390px;height:200px;">
+<br>
+<br>
+In the 16th century, Varanasi had a cultural revival under the Mughal emperor Akbar who patronised the city, and built two large temples dedicated to Shiva and Vishnu. Much of what is considered modern Varanasi was built during the 18th century, by the Maratha and Bhumihar Brahmin kings. The Kingdom of Benares was given official status by the Mughals in 1737, and continued as a dynasty-governed area until Indian independence in 1947. The city is governed by the Varanasi Nagar Nigam (Municipal Corporation) and is represented in the Parliament of India by the current Prime Minister of India Narendra Modi, who won the Lok Sabha elections in 2014 by a huge margin. Silk weaving, carpets and crafts and tourism employ a significant number of the local population, as do the Diesel Locomotive Works and Bharat Heavy Electricals. Varanasi Hospital's foundation stone was laid by governor Kanaiyalal Maneklal Munshi in 1954 and it was inaugurated by president S. Radhakrishnan in 1964
+<br>
+<br>
+Varanasi has been a cultural centre of northern India for several thousand years, and is closely associated with the Ganges. Hindus believe that dying here and getting cremated along the banks of the "holy" Ganges river allows one to break the cycle of rebirth and attain salvation,[12] making it a major center for pilgrimage. The city is known worldwide for its many ghats, embankments made in steps of stone slabs along the river bank where pilgrims perform ritual ablutions. Of particular note are the Dashashwamedh Ghat, the Panchganga Ghat, the Manikarnika Ghat, and the Harishchandra Ghat, the last two being where Hindus cremate their dead. The Hindu genealogy registers at Varanasi are kept here.
+<br>
+</p>
+
+  </div>
+
+  <div class="left" style="background-color:		#FFE4E1"><br><h2 style="font-size:40px;">Etymology</h2>
+  <p style="font-size:18px;">Traditional etymology links "Varanasi" to the names of two Ganges tributaries forming the city's borders: Varuna, still flowing in northern Varanasi, and Assi, today a small stream in the southern part of the city, near Assi Ghat. The old city is located on the north shores of the Ganges, bounded by Varuna and Assi.
+<br>
+<br>
+
+In the Rigveda, an ancient Indian sacred collection of Vedic Sanskrit hymns, the city is referred to as Kāśī (काशी: Kashi) from the Sanskrit verbal root kaś- "to shine", making Varanasi known as "City of Light", the "luminous city as an eminent seat of learning". The name was also used by pilgrims dating from Buddha's days.
+<br>
+<br>
+Hindu religious texts use many epithets to refer to Varanasi, such as Kāśikā (काशिका: Sanskrit: "the shining one"), Avimukta (अविमुक्त: Sanskrit: "never forsaken" by Shiva), Ānandavana (आनंदवना: Sanskrit: "the forest of bliss"), and Rudravāsa (रुद्रवासा: Sanskrit: "the place where Rudra/Śiva resides").
+</p>
+<br>
+<br></div>
+  <div class="middle" style="background-color:	#E6E6FA;"><br><h2 style="font-size:40px;">History</h2><p>
+  <p style="font-size:18px;">According to Hindu mythology, Varanasi was founded by Shiva, one of three principal deities along with Brahma and Vishnu. During a fight between Brahma and Shiva, one of Brahma's five heads was torn off by Shiva. As was the custom, the victor carried the slain adversary's head in his hand and let it hang down from his hand as an act of ignominy, and a sign of his own bravery. A bridle was also put into the mouth. Shiva thus dishonored Brahma's head, and kept it with him at all times. When he came to the city of Varanasi in this state, the hanging head of Brahma dropped from Shiva's hand and disappeared in the ground. Varanasi is therefore considered an extremely holy site.
+  <br>
+<br>
+
+The Pandavas, the protagonists of the Hindu epic Mahabharata, are said to have visited the city in search of Shiva to atone for their sin of fratricide and Brāhmanahatya that they had committed during the climactic Kurukshetra War. It is regarded as one of seven holy cities (Sapta Puri) which can provide Moksha; Ayodhya, Mathura, Haridwar, Kashi, Kanchi, Avanti, and Dvārakā are the seven cities known as the givers of liberation. The princesses Ambika and Ambalika of Kashi were wed to the Hastinapur ruler Vichitravirya, and they later gave birth to Pandu and Dhritarashtra. Bhima, a son of Pandu, married a Kashi princess Valandhara and their union resulted in the birth of Sarvaga, who later ruled Kashi. Dhritarasthra's eldest son Duryodhana also married a Kashi princess Bhanumati, who later bore him a son Lakshman Kumara and a daughter Lakshmanaa.
+ <br>
+  <br>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Benares_A_Brahmin_placing_a_garland_on_the_holiest_spot_in_the_sacred_city_by_James_Prinsep_1832.jpg/389px-Benares_A_Brahmin_placing_a_garland_on_the_holiest_spot_in_the_sacred_city_by_James_Prinsep_1832.jpg" alt="VNS" style="width:390px;height:200px;">
+  <br>
+  <br>
+  </p>
+
+<form action="https://en.wikipedia.org/wiki/Varanasi#History">
+    <input type="submit" value="Learn More" />
+</form>
+
+</div>
+  <div class="right" style="background-color:#B0E0E6;"><br><br><h2 style= "font-size:40px;">Notable landmarks</h2><p><br>
+
+  <h3 style="color:red; font-size:30px;">Jantar Mantar</h3><br> <p style="font-size:18px;">
+The Jantar Mantar observatory, constructed in 1737, is located above the ghats along the Ganges, and is adjacent to the Manmandir and Dasaswamedh Ghats and near the palace of Jai Singh II of Jaipur. While less equipped than the observatories at Jaipur and Delhi, the Jantar Mantar has a unique equatorial sundial which is functional and allows measurements to be monitored and recorded by one person.</p><br>
+
+<p><a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Varanasi">Jantar Mantar, Varanasi</a></p>
+
+<h3 style="color:red; font-size:30px;">Ramnagar Fort</h3>
+<p style="font-size:18px;">The Ramnagar Fort, located near the Ganges on its eastern bank and opposite the Tulsi Ghat, was built in the 18th century by Kashi Naresh Raja Balwant Singh with cream-coloured chunar sandstone. The fort is a typical example of the Mughal architecture with carved balconies, open courtyards, and scenic pavilions. At present, the fort is in disrepair. The fort and its museum are the repository of the history of the kings of Benares. Cited as an "eccentric" museum, it contains a rare collection of American vintage cars, bejewelled sedan chairs, an impressive weaponry hall, and a rare astrological clock. In addition, manuscripts, especially religious writings, are housed in the Saraswati Bhawan which is a part of a museum within the fort. Many books illustrated in the Mughal miniature style are also part of the collections. Because of its scenic location on the banks of the Ganges, it is frequently used as an outdoor shooting location for films.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Ramnagar_Fort">Ramnagar Fort</a></p>
+
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ramnagar_Fort_in_Varanasi.jpg/375px-Ramnagar_Fort_in_Varanasi.jpg" alt="Ramnagar fort" style="width:400px;height:500px;">
+<br>
+<h3 style="color:red; font-size:30px;">Ghats</h3>
+<p style="font-size:18px;">The Ghats in Varanasi are world-renowned embankments made in steps of stone slabs along the river bank where pilgrims perform ritual ablutions. The ghats are an integral complement to the Hindu concept of divinity represented in physical, metaphysical, and supernatural elements. Varanasi has at least 84 ghats, most of which are used for bathing by pilgrims and spiritually significant Hindu puja ceremony, while a few are used exclusively as Hindu cremation sites.Steps in the ghats lead to the banks of Ganges, including the Dashashwamedh Ghat, the Manikarnika Ghat, the Panchganga Ghat, and the Harishchandra Ghat, where Hindus cremate their dead. Many ghats are associated with Hindu legends and several are now privately owned.
+<br>
+Many of the ghats were constructed under the patronage of the Marathas, Shindes (Scindias), Holkars, Bhonsles, and Peshwas. Most are bathing ghats, while others are used as cremation sites. A morning boat ride on the Ganges across the ghats is a popular tourist attraction. The extensive stretches of ghats in Varanasi enhance the riverfront with a multitude of shrines, temples, and palaces built "tier on the tier above the water's edge".</p><br>
+<br>
+<br>
+<p><a href="https://en.wikipedia.org/wiki/Ghats_in_Varanasi">Ghats in Varanasi</a></p>
+
+<h3 style="color:red; font-size:30px;">Kashi Vishwanath Temple</h3>
+<p style="font-size:18px;"><a href="https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple">Kashi Vishwanath Temple</a>on the Ganges, is one of the 12 Jyotirlinga Shiva temples in Varanasi.The temple has been destroyed and rebuilt several times throughout its existence. The Gyanvapi Mosque, which is adjacent to the temple, is the original site of the temple. The temple, which is also known as the Golden Temple, was built in 1780 by Queen Ahilyabai Holkar of Indore. The two pinnacles of the temple are covered in gold and were donated in 1839 by Ranjit Singh, the ruler of Punjab. The dome is scheduled to receive gold plating through a proposed initiative of the Ministry of Culture and Religious Affairs of Uttar Pradesh. Numerous rituals, prayers, and aartis are held daily at the temple between 02:30 and 23:00</p><br>
+
+<h3 style="color:red; font-size:30px;">Sankat Mochan Hanuman Temple</h3>
+<p style="font-size:18px;"><a href="https://en.wikipedia.org/wiki/Sankat_Mochan_Hanuman_Temple">Sankat Mochan Hanuman Temple</a>which is situated by the Asi River, is one of the sacred temples of the Hindu god Hanuman. The present temple was built in the early 1900s by the educationist and Indian independence figure, Pandit Madan Mohan Malaviya, the founder of Banaras Hindu University. According to Hindu legend the temple was built on the spot where the medieval Hindu saint Tulsidas had a vision of Hanuman. During a 7 March 2006 terrorist attack, one of three explosions hit the temple while a wedding was in progress, and resulted in injuries to 30 people apart from 23 deaths. Following the attack, a permanent police post was installed inside the temple</p><br>
+
+
+</div>
+</div>
+  <article><h2 style=" color:mediumblue; font-size:50px;">Dashashwamedh Ghat</h2><i>
+  <p style="font-size:18px;">Dashashwamedh Ghat is the main ghat in Varanasi on the Ganga River. It is located close to Vishwanath Temple and is probably the most spectacular ghat. Two Hindu legends are associated with it: according to one, Brahma created it to welcome Shiva, and in another, Brahma sacrificed ten horses during Dasa-Ashwamedha yajna performed here.
+<br>
+The present ghat was built by Peshwa Balaji Baji Rao in the year 1748. A few decades later, Ahilyabahi Holkar, the Queen of Indore rebuilt the ghat in the year 1774.Close to the ghat, overlooking the Ganga lies the Jantar Mantar, an observatory built by Maharaja Jai Singh of Jaipur in the year 1737.</p>
+  <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">History of Dashashwamedh Ghat
+
+Dashashwamedh ghat is one of the oldest, most spectacular and important ghat, located at the bank of the river Gange near to the old Vishwanath Temple in the Kashi. The literal meaning of the Dashashwamedh is the Ghat (river front) of the ten sacrificed horses (dash means 10, ashwa means horse, medh means sacrifice).
+<br>
+There are two mythologies about the ghat is that the Lord Brahma was created the  Dashashwamedh ghat in order to welcome the Lord Shiva, and the second one is the Lord Brahma was sacrificed the ten horses in a yajna here. The Dashashwamedh ghat was reconstructed by the Bajirao Pesava I in the year 1740 AD. It was later reconstructed by the Queen of the Indore (the princess Ahilyabai Holkar) in the year 1774.
+<br>
+It is also believed that the ten horse sacrifice was done by the Bhara Shiva Naga rulers in the second century. This ghat is famous for the Agni Pooja which is held here daily in the evening by a group of the priest who are dedicated to the Lord Shiva, River Ganges, Surya, Agni as well as the whole universe. Tourists can see the excellent and colorful riverfront view. A group of sadhus can be seen performing religious activities at this ghat.
+<br>
+It is great to see the real attraction of this ghat in the evening when Gange aarti is held here. This ghat has become the religious spot for the devotees and pilgrims for years and tourists as well. Historically, it is considered as the most favorite and main ghat among the Hindu devotees. Near to the Dashashwamedh ghat, there are various religious temples as well as tourists’ destinations.
+
+</p>
+
+ <h4 style="font-size:30px;">Significance</h4>
+<p  style="font-size:18px;">At the great festivals, Hindu devotees come in huge number because of the different religious significance of the ghat. The ghat has retained its beauty with the various Hindu God temples and religious sites. Pilgrims come here to perform a variety of rituals and religious activities. The evening Aarti of the Gange at this ghat attracts huge crowd from every corner of the city. Some of the devotees come here daily in the morning to pay homage to their Lord after having a holy bath in the Gange water.
+<br>
+One can be full of spiritual thoughts if he spends some time at this ghat. Some people are used of the daily meditation in the early morning at the ghat because of the beautiful environment, safe atmosphere, cool and fresh air. Spending some time here makes the one feel like sitting in the heaven. The sun rising and sun set scene in the morning and evening respectively are the awesome scenes which provides the special color to the Gange water.
+<br>
+Dashashwamedh ghat is famous for great event named Gange Aarti at each evening after sunset. Thousands of earthen lamps are immersed in the Gange water as a floating lamp which looks awesome and seems a great religious ritual of the Hindu devotees. The Gange aarti is a religious event which is performed at the bank of the Gange River by a group of young priests who become draped in a saffron color dress having puja thali and a big brass aarti lamp.
+<br>
+Gange aarti starts with the blow of the conch shell followed by aarti with the large flaming lamps and chant of mantras and aarti song. The whole environment becomes full of light of the lamp. People begin to arrive to the destination at 5 pm in the evening to get their proper places in order to have the appropriate view of the aarti. Some people including tourist are love to see the aarti event by sitting in a boat in the river. A maha Gange aarti held at the ghat at Kartik Purnima which attracts an unbelievable crowd.
+</p>
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Ganga Aarti (ritual of offering prayer to the Ganges river) is held daily at dusk. Several priests perform this ritual by carrying deepam and moving it up and down in a rhythmic tune of bhajans. Special aartis are held on Tuesdays and on religious festivals.
+The Ganga Aarti starts soon after sunset and lasts for about 45 minutes. In summer the Aarti begins at about 7pm due to late sunsets and in winter it starts at around 6pm. Hundreds of people gather at the ghat every evening to watch the event.
+</p>
+
+<h4 style="font-size:30px;">Ganga Arti Timings </h4>
+<p style="font-size:18px;">
+Ganga Aarti (ritual of offering prayer to the Ganges river) is held daily at dusk. Several priests perform this ritual by carrying deepam and moving it up and down in a rhythmic tune of bhajans.[4] Special aartis are held on Tuesdays and on religious festivals.
+<br>
+The Ganga Aarti starts soon after sunset and lasts for about 45 minutes. In summer the Aarti begins at about 7pm due to late sunsets and in winter it starts at around 6pm. Hundreds of people gather at the ghat every evening to watch the event.
+.</p>
+
+<img src="https://www.tripsavvy.com/thmb/0gZ5d5EDz6BOpw824khuCUwJIsM=/1998x1332/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-505018850-ea322f8f54cd4edd9aef7e257d74a396.jpg" alt="DAs" style="width:400px;height:300px;">
+
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Dashashwamedh+Ghat/@25.3061863,83.008097,17z/data=!3m1!4b1!4m5!3m4!1s0x398e2e1e04411f67:0xa61aef36a11cc83c!8m2!3d25.3061863!4d83.0102857?hl=en">GOOGLE MAP LINK~Dashashwamedh Ghat</a></p>
+<hr>
+
+<h2 style=" color:mediumblue;font-size:50px;">Manikarnika Ghat</h2><i>
+<p style="font-size:18px;">Manikarnika Ghat (Hindi: मणिकर्णिका घाट) is one of the holiest cremation grounds among the sacred riverfronts (ghats), alongside the river Ganga, in the city of Varanasi in the Indian state of Uttar Pradesh. In Hinduism, death is considered as a gateway to another life marked by the results of one's karma. It is believed that a dead human's soul attains moksha, and hence breaks the cycle of rebirth when cremated here. Thus, scores of the elderly across the whole country seek to walk up to its edges, and spend their last days absorbing the charisma of the ghat making death painless and insignificant to be pondered upon.
+<br>
+The ghat is named after Maharani Lakshmibai of Jhansi, who was born here. The Hindu genealogy registers at Varanasi are kept here.
+</p>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">It is one of the oldest ghats in Varanasi. The Manikarnika Ghat is mentioned in a Gupta inscription of 5th century. It is revered in Hindu religion. When Mata Sati (Aadi shakti mata) sacrificed her life & set her body ablaze after Raja Daksh Prajapati (one of the sons of Lord Brahma) tried to humiliate Lord Shiva in a Yagya practiced by Daksh. Lord Shiva took her burning body to the Himalaya. On seeing the unending sorrow of Lord Shiva, Vishnu sends the Divine chakra to cut the body into 51 parts which fall on earth. They are called "Ekannya Shaktipeeth". Lord Shiva established Shakti Peeth wherever Sati's body had fallen. At Manikarnika ghat, Mata Sati's Ear's ornament had fallen.
+</p>
+
+ <h4 style="font-size:30px;">Significance</h4>
+ <p style="font-size: 18px;">Hindu mythology teaches that the ghat is especially sacred and that people cremated there receive moksha. As the myth goes, Vishnu, after several thousand years of tapasya, trying to please Shiva, to convince him to not destroy the holy city of Kashi when he destroys the world, managed to do so.
+<br>
+Lord Shiva along with Parvati came to Kashi before Vishnu to grant him his wish. Vishnu dug a kund (well) on the bank of Ganga for the bath of the couple. When Lord Shiva was bathing a Mani (Jewel) from his earring fell into the kund, hence the name Manikarnika (Mani:Beads Karnam:Ear Angad: Ornament). There is another myth about the ghat : the ear jewel from lord Shiva fell down while he was dancing angrily, which fell on the earth and thus Manikarnika Ghat formed</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">The Manikarnika Ghat is flanked by the Dashashwamedh Ghat and the Scindia Ghat. It is situated in Varanasi, India.</p>
+<br>
+<br>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Manikarnika_Cremation_Ghat%2C_Varanasi.jpg/330px-Manikarnika_Cremation_Ghat%2C_Varanasi.jpg" alt="Manikarnika Ghat" style="width:300x;height:300px;">
+<br>
+<p><a href="https://en.wikipedia.org/wiki/Manikarnika_Ghat">Manikarnika Ghat</a></p>
+<hr>
+<p><a href="https://www.google.com/maps/place/Manikarnika+Ghat/@25.3108107,83.0118967,17z/data=!3m1!4b1!4m5!3m4!1s0x398e2e2193166ba5:0x7d603cdfe4985030!8m2!3d25.3108107!4d83.0140854">GOOGLE MAP LINK~Manikarnika Ghat</a></p>
+<hr>
+
+<h2 style="color:mediumblue; font-size:50px;">Assi Ghat </h2><i>
+<p style="font-size:18px;">Assi Ghat is the southernmost ghat in Varanasi.To most visitors to Varanasi, it is known for being a place where long-term foreign students, researchers, and tourists live.</p>
+ <h4 style="font-size:30px;">Tourism at Assi ghat</h4>
+<p style="font-size:18px;">Assi Ghat is the southernmost ghat in Varanasi. To most visitors to Varanasi, it is known for being a place where long-term foreign students, researchers, and tourists live. Assi Ghat is one of the ghats often visited for recreation and during festivals. On typical days about 300 people visit every hour in the mornings, and on festival days 2500 people arrive per hour. Most of the people visiting the ghat on usual days are students from the nearby Banaras Hindu University. The ghat accommodates about 22,500 people at once during festivals like Shivratri.
+There are a lot of activities for tourists to engage in at the ghat. Visitors can go for boat rides, go up in a hot-air balloon for an aerial view of Assi ghat, enjoy the daily talent show in the evening or eat at one of the many restaurants and cafes in the area.
+Hindus believe that it was at Assi Ghat that Tulsidas left for his heavenly abode.
+After the 2010 Varanasi bombing the city commissioned extra police to the Assi Ghat neighborhood in order to more quickly resolve problems which tourists might have.
+
+</p>
+
+<h4 style=" font-size:30px;">Location</h4>
+<p style="font-size:18px;">Assi ghat, Shivala, Varanasi, Uttar Pradesh 221005<br>
+Nearest Airport- Lal Bahadur Shastri International Airport (16 Km).<br>
+Nearest Railway Station- Varanasi Junction railway station (6.8 Km).
+</p>
+<br>
+<br>
+
+<img src="https://optimatravels.com/images/varanasi-images/assi-ghat.jpg" alt="Assi" style="width:200x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Assi+ghat,+Shivala,+Varanasi,+Uttar+Pradesh+221005/@25.2886746,83.0045064,17z/data=!3m1!4b1!4m5!3m4!1s0x398e31ec350fb8ab:0xa8fd115260e2f177!8m2!3d25.2886478!4d83.0067619?hl=en">GOOGLE MAP LINK~Assi Ghat</a></p>
+<hr>
+<h2 style="color:mediumblue; font-size:50px;">Darbhanga Ghat</h2><i>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">Located between the Dashaswamedh Ghat and the Rana Mahal Ghat, Darbhanga Ghat was named after the royal family from Darbhanga. Apart from the ghat, the family also built a magnificent palace in 1900s near the bank of the river from where they could watch the rituals and other activities. Popular Hindu belief has it that dying or being cremated on the ghats of Varanasi is a path to salvation. Like most ghats, Darbhanga Ghat also serves as an open crematorium. The ghat is a bit steep and narrow but becomes wide near Babua Pandey Ghat. This ghat also has a temple dedicated to Lord Shiva
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">A 2-min walk from the Dashashwamedh Ghat , Near Ahilyabai Ghat, Uttar Pradesh 221010.</p>
+<br>
+<br>
+
+<img src="https://media-cdn.tripadvisor.com/media/photo-s/09/16/45/70/darbhanga-ghat.jpg" alt="Darbhanga Ghat" style="width:200x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Darbhanga+Ghat/@25.3052264,83.0075128,17z/data=!3m1!4b1!4m5!3m4!1s0x398e31e186e0acf5:0x556a391711f3f1c2!8m2!3d25.3052264!4d83.0097015?hl=en">GOOGLE MAP LINK~Darbhanga Ghat</a></p>
+<hr>
+
+<h2 style=" color:mediumblue; font-size:50px;">Lalita Ghat</h2><i>
+<p style="font-size:18px;">Lalita Ghat  is one of the main ghats on the Ganges River in Varanasi. The ghat is named after Hindu Goddess Lalita and was built in early 19th century by King of Nepal, Rana Bahadur Shah. The ghat houses the famous Nepali Mandir and Lalita Gauri Mandir.</p>
+ <h4 style="font-size:30px;">History</h4>
+<p style="font-size:18px;">King of Nepal, Rana Bahadur Shah took exile in Varanasi from 1800 to 1804 and titled himself as "Swami Nirgunanda". During his exile, he decided to build a replica of Pashupatinath Temple in Varanasi. Construction of the temple commenced during his exile / stay in Varanasi. During the construction, Shah moved back to Nepal. On 25 April 1806, Rana Bahadur Shah was stabbed to death by his stepbrother, Sher Bahadur Shah. His son Girvan Yuddha Bikram Shah Deva undertook the construction of the temple (now called Nepali Mandir), a dharamshala and Lalita Ghat. The construction got over 20 years after the deadline.
+</p>
+
+<h4 style="font-size:30px;">Significance</h4>
+<p style="font-size:18px;">The ghat is named after Hindu Goddess Lalita. Goddess Lalita is one of the group of ten goddesses of Hindu belief, collectively called Mahavidyas or Dasha-Mahavidyas. She is the foremost and the most important in Dasha-Mahavidyas. All other Mahavidyas concludes in her vidya i.e. Sri Vidya. Her consort is Maha Kameswara. She is the highest aspect of Goddess Adi Shakti. Parvati is the complete incarnation of Lalita Maha Tripura Sundari.<br>
+Affiliated to this site are the well known Lingam of Ganga Keshava; shrines of Gangatitya, Kashi Devi, Lalita Devi and Bhagirath Tirtha. It is a popular belief that a glimpse of Lalita Devi brings the same blessings as circumambulating the entire world. It is also believed that blessings of the Goddess Lalita eliminates problems and brings prosperity.
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">Lalita Ghat is situated on the bank of Ganges. It is 3.8 kilometers South-East of Varanasi Junction railway station and 100 meters South-West of Manikarnika Ghat.</p>
+<br>
+<br>
+
+<img src="https://lh5.googleusercontent.com/p/AF1QipM8Tkk4h7lwbxSXBtXwKQgQ25BRz6o_HSdLBi1C=w426-h240-k-no" alt="Lalita Ghat" style="width:300x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Lalita+Ghat,+Varanasi/@25.3100129,83.0110872,17z/data=!3m1!4b1!4m5!3m4!1s0x398e2e21d012ad63:0x4ff6a4dcda3d7cfe!8m2!3d25.3100129!4d83.0132759?hl=en">GOOGLE MAP LINK~Lalita Ghat</a></p>
+<hr>
+
+<h2 style="color:mediumblue; font-size:50px;">Man Mandir Ghat</h2><i>
+<p style="font-size:18px;">Man Mandir Ghat is as aesthetic as it is enormous. Situated north to the Dashashwamedh Ghat, it is also known as Someswara Ghat, after the lingam of Lord Someshwar (another form of Lord Shiva) which is found here. The ghat was built by Maharaja Man Singh of Amer in 1600 AD, along with a magnificent palace located in close proximity. The palace is a major tourist attraction in itself with its ornate window carvings and other splendid features. There is an observatory on the roof of the palace called Jantar Mantar which was built by Maharaja Sawai Jai Singh II in 1710 AD. If you head over to the northern part of the balcony with its stone balconies, you will be treated to some fabulous views of the surroundings.<br>
+The Man Mandir Ghat is also dotted with several Hindu temples including Rameshwara Temple, Sthuladanta Vinayak Temple and Someshwara Temple. The ghat acquires a different beauty during the evenings and early mornings. Visitors can be seen relaxing and enjoying the views offered by the ghat.
+</p>
+ <h4 style="font-size:30px;">Popular Nearby Tourist Attractions</h4>
+<p style="font-size:18px;">After visiting Man Mandir Ghat, there are other tourist attractions in Varanasi which you can visit and explore. Some of them are mentioned below.<br>
+1.	Dhamek Stupa<br>
+2.	Alamgir Masjid<br>
+3.	Nepali Temple<br>
+4.	Assi Ghat<br>
+5.	Manikarnika Ghat<br>
+6.	Chaukhandi Stupa<br>
+7.	Dashashwamedh ghat<br>
+8.	Ramnagar Fort<br>
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">D31/178, Dashashwamedh Ghat Rd, Bhairavi ghat, Bangali Tola, Varanasi, Uttar Pradesh 221001</p>
+<br>
+<br>
+
+<img src="https://lh5.googleusercontent.com/p/AF1QipNP6eKvjaELHkNPgMO3DAvEB3iiZI4Yfx-SmWwS=w426-h240-k-no" alt="Man Mandir Ghat" style="width:400x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Manmandir+Ghat,+Bangali+Tola,+Varanasi,+Uttar+Pradesh+221001/@25.30767,83.0089141,17z/data=!3m1!4b1!4m5!3m4!1s0x398e31e1d8fb1481:0x6c28dbff11744726!8m2!3d25.30769!4d83.0110851?hl=en">GOOGLE MAP LINK~Man Mandir Ghat</a></p>
+<hr>
+
+<h2 style="color:mediumblue; font-size:50px;">Tulsi Ghat</h2><i>
+<p style="font-size:18px;">Tulsi Ghat is one of the ghats in Varanasi. It is named for Tulsidas who lived there while he wrote the Ramcharitmanas. Earlier, Tulsi Ghat was known as Lolark Ghat. It was in the year 1941 that Tulsi Ghat was made pucca (cemented) by the famous industrialist, Baldeo Das Birla.</p>
+<h4 style="font-size:30px;">Cultural activities at Tulsi Ghat</h4>
+<p style="font-size:18px;">Tulsi Ghat is associated with a number of important activities such as Lolark Sasthi at Lolark kunda (to be blessed with sons and their long life) and the sacred bath to get rid of leprosy and skin diseases. The festival of Lolark Sasthi falls on the 6th day of the bright half of Bhadrapad. During the Hindu lunar month of Kartika (Oct/Nov), the Krishna Lila, a play about the lila of Krishna (Nag Nathaiya), is staged here with great fanfare and devotion.
+</p>
+ <h4 style="font-size:30px;">Activism at Tulsi Ghat</h4>
+<p style="font-size:18px;">Tulsi Ghat is the office base of Sankat Mochan Foundation, a non governmental organization working to clean the river Ganga since 1982. Sankat Mochan Foundation is one of the biggest names associated with the Ganges cleaning project. Prof. Veer Bhadra Mishra, an environmentalist and social activist who is also the manager of Sankat Mochan Foundation, lives at Tulsi Ghat. Prof. Mishra was awarded the United Nations Environment Program's the Global 500 Roll of Honour in 1992.
+</p>
+
+<h4 style="font-size:30px;">Location</h4>
+<p style="font-size:18px;">B 2/40 , Tulsi ghat, Assi Rd, Varanasi, Uttar Pradesh 221001 </p>
+<br>
+<br>
+
+<img src="https://optimatravels.com/images/varanasi-images/tulsi-ghat-head.jpg" alt="Tulsi Ghat" style="width:400x;height:200px;">
+<br>
+<br>
+<hr>
+<p><a href="https://www.google.com/maps/place/Tulsi+Ghat/@25.290305,83.0042103,17z/data=!3m1!4b1!4m5!3m4!1s0x398e31ee78c15f5d:0x3bc05d35b3ae49b1!8m2!3d25.290305!4d83.006399?hl=en">GOOGLE MAP LINK~Tulsi Ghat</a></p>
+<hr>
+
+<h1 style="font-size:30px;">Some Other Nearby Ghat</h1>
+<p>
+•The Maan-Sarowar Ghat was built by<a href="https://en.wikipedia.org/wiki/Man_Singh_I"> Man Singh of Amber</a>
+<br>
+•Raj Ghat
+<br>
+•Digpatia ghat
+<br>
+•Ganga Mahal ghat<br>
+•<a href="https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%B0%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A5%8D%E0%A4%B0_%E0%A4%98%E0%A4%BE%E0%A4%9F">Harishchandra ghat</a><br>
+•Chet Singh ghat<br>
+•Jain Ghat<br>
+•<a href="http://kashikatha.com/mansarovar-ghat-varanasi/">Mansarovar ghat</a><br>
+•Rajendraprasad ghat<br>
+•Scindia ghat<br>
+•Shivala ghat<br>
+•Vijayanagaram ghat<br>
+•<a href="https://www.varanasiguru.com/rani-ghat/">Rani ghat</a>
+
+</p>
+<h4 style="font-size:40px;" >Pollution:</h4>
+<p style="font-size:18px;">The level of faecal and coliform bacteria in the Ganga river in Varanasi measured by the UP Pollution Control Board (UPPCB) is several hundred times more than the permissible limit. Faecal coliform bacteria are found in excreta that contaminates water through untreated sewerage.
+</p>
+
+<h4 style="font-size:40px;">Awareness:</h4>
+<p style="font-size:18px;">
+A Floating Museum keeps floating from one ghat to other one and generates public awareness. Many people pay a visit to the museum and see the pictures.
+A first of its kind floating museum, Ganga Tarini, is creating awareness about the biodiversity, importance of the river Ganga as well as highlighting the need to clean the river and save it from pollution.
+The museum also highlights the threat from industrial effluents and sewage as well as steps like infrastructure development for sewage and industrial effluent treatment being taken by the government under the National Mission for Clean Ganga (NMCG).
+</p>
+
+
+<h4 style="font-size:40px;">Transportation:</h4>
+  <p style="font-size:20px;">By Road:</p>
+You can easily get regular buses to Varanasi from other major cities of the country. NH-2 serve this city from other part of the country..<br><hr>
+<p style="font-size:20px;">By Railway:</p>
+Varanasi Cantt Railway Station (4.2 Km).<br><hr>
+<p style="font-size:20px;">Air Service:</p>
+Lal Bahadur Shastri International Airport Babatpur Varanasi.(24.9 Km)<br>
+<hr>
+  
+</body>
+</html>

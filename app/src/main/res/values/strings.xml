@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">D!G! GHATS</string>
+    <string name="title_activity_homeactivity">Homeactivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">D!G! Ghats</string>
+    <string name="nav_header_subtitle">A new Venture</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_policy">Privacy Policy</string>
+    <string name="action_about">About Us</string>
+    <string name="action_contact">Contact</string>
+    <string name="action_rate">Rate Us!</string>
+    <string name="action_exit">Exit</string>
+
+
+    <string name="action_policy_title">Privacy Policy</string>
+    <string name="action_contact_title">Contact</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_exclusive">Exclusive</string>
+    <string name="menu_objective">Awareness</string>
+    <string name="menu_wholeview">Bhuvan Ganga</string>
+    <string name="menu_update">Updates</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_rate">Rate</string>
+    <string name="menu_moreapp">More apps..</string>
+
+
+</resources>
