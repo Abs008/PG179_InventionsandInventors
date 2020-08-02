@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "168544993266",
+    "firebase_url": "https://d-g--ghats.firebaseio.com",
+    "project_id": "d-g--ghats",
+    "storage_bucket": "d-g--ghats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168544993266:android:4bb6ad3f7e05b401cfb56b",
+        "android_client_info": {
+          "package_name": "com.example.dg_ghats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168544993266-g3ghs4r6bd8fn4i0dl6do77shbtqqsqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTLRaNZO63fH9QoyQF4BBKVgXTdQPPf-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168544993266-g3ghs4r6bd8fn4i0dl6do77shbtqqsqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
