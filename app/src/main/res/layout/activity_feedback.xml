@@ -3,113 +3,114 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="16dp"
     android:layout_height="match_parent"
     android:background="@drawable/wall1"
+    android:padding="16dp"
     tools:context=".FeedbackActivity">
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_width="391dp"
+        android:layout_height="64dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="0dp"
-        android:text="Let us know!"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="690dp"
         android:gravity="center"
+        android:text="Let us know!"
         android:textColor="#474539"
         android:textSize="40sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chosefile"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="600dp"
+        android:background="@drawable/button_bg"
+        android:text="Choose file"
+        android:textColor="#12100A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/namedata"
-        android:layout_width="wrap_content"
+        android:id="@+id/filedata"
+        android:layout_width="216dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:hint="Name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="600dp"
+        android:hint="Enter file name"
         android:inputType="textPersonName" />
+
+
+    <ImageView
+        android:id="@+id/imgforup"
+        android:layout_width="395dp"
+        android:layout_height="348dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="239dp" />
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="395dp"
+        android:layout_height="348dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="239dp" />
 
     <EditText
         android:id="@+id/emaildata"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="10dp"
-        android:inputType="textPersonName"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="166dp"
+        android:ems="10"
         android:hint="Email"
-        android:layout_below="@+id/namedata" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/messagedata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="87dp"
         android:ems="10"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="10dp"
-        android:inputType="textPersonName"
-        android:layout_below="@+id/emaildata"
-        android:hint="Message" />
+        android:hint="Message"
+        android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/details"
+        android:id="@+id/upload"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="370dp"
-        android:layout_marginEnd="80dp"
-        android:enabled="false"
-        android:text="View Sent Details"
-        android:background="@drawable/button_bg"
-        android:textColor="#AE2626"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="100dp"
-        android:background="@drawable/button_bg"
-        android:text="Submit"
-        android:textColor="#12100A"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/hotelbtn"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="149dp"
-        android:background="@drawable/button_bg_transparent1"
-        android:textStyle="bold"
-        android:text="HOTELS"
-        android:textColor="#F5F6F6"
-        android:textSize="30sp" />
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button_bg"
+        android:text="Upload"
+        android:textColor="#12100A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
