@@ -292,16 +292,13 @@ public class Homeactivity extends AppCompatActivity {
         videohome.stopPlayback();
         super.onDestroy();
     }
+
+
     @Override
     public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            super.onBackPressed();
-            return;
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
+        Intent intent = new Intent(Homeactivity.this,MidActivity.class);
+        startActivity(intent);
+        finish();
     }
+
 }
